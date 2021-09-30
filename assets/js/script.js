@@ -16,7 +16,18 @@ function saveInput(event) {
     var currentTimeText = $(this).parent().attr("clock-hour");
     console.log("textarea", userInput, currentTimeText)
     localStorage.setItem(currentTimeText, userInput)
+
 }
 // console.log(saveInput)
 // function for time to change text area by color
 
+$(".time-block").each(function(){
+   var currentBlock = $(this).attr("clock-hour")
+   var currentInput = localStorage.getItem(currentBlock)
+   $((this)).children("textarea").val(currentInput)
+
+})
+
+// for (let i = 9; i <= 17; i++) {
+    // var userInput = localStorage.getItem(i)
+//}
