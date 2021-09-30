@@ -18,16 +18,19 @@ function saveInput(event) {
     localStorage.setItem(currentTimeText, userInput)
 
 }
-// console.log(saveInput)
 // function for time to change text area by color
 
 $(".time-block").each(function(){
    var currentBlock = $(this).attr("clock-hour")
    var currentInput = localStorage.getItem(currentBlock)
-   $((this)).children("textarea").val(currentInput)
-
+   $(this).children("textarea").val(currentInput)
+   console.log(currentBlock, currentInput)
+   if (currentBlock < currentTime) {
+    $(this).children("textarea").addClass("past")
+   } else if (currentBlock == currentTime){
+    $(this).children("textarea").addClass("present")
+   } else {
+    $(this).children("textarea").addClass("future")
+   }
 })
 
-// for (let i = 9; i <= 17; i++) {
-    // var userInput = localStorage.getItem(i)
-//}
