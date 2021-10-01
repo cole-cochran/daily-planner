@@ -12,3 +12,5 @@ For the first step I created global variables to be used throughout my JS. Next 
 ### [Password Generator](https://cole-cochran.github.io/daily-planner/)
 
 ### [Screenshot](https://github.com/cole-cochran/daily-planner/blob/main/assets/images/screencapture-cole-cochran-github-io-daily-planner-2021-10-01-16_10_07.png?raw=true)
+---
+This project was written by Cole Cochran, with assistance from Bootstrap documentation, and the almighty Google. 
