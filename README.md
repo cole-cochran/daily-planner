@@ -8,6 +8,7 @@ The daily planner began by figuring out how to handle the columns in Boostrap to
 For the first step I created global variables to be used throughout my JS. Next I created a function to call moment to format the current day/time with a set interval of 1 second by setting it to 1000 milliseconds. Following that I had to create a function to save input into the text area to save that input to local storage, and persist the date on refresh. Data is continiously saved in local storage. Following the storage of the input in the text area, I leveraged the use of moment as a global variable to change the text area with dynamic css as part of the classes past, present and future using if else to determine time of day, and assigning the respective CSS class. 
 ---
 ### Deployment Link & Screenshot
-[Password Generator](https://cole-cochran.github.io/daily-planner/)
 ---
-[Screenshot](https://github.com/cole-cochran/password-generator/blob/main/images/screencapture-cole-cochran-github-io-password-generator-2021-09-24-14_49_54.png?raw=true)
+### [Password Generator](https://cole-cochran.github.io/daily-planner/)
+
+### [Screenshot](https://github.com/cole-cochran/daily-planner/blob/main/assets/images/screencapture-cole-cochran-github-io-daily-planner-2021-10-01-16_10_07.png?raw=true)
